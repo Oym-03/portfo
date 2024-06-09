@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Sarmed</title>
+    <link rel="icon" type="image/x-icon" href="weblogo.png" />
+    <link rel="stylesheet" href="portfo.css" />
+  </head>
+  <body>
+    <div class="navBar">
+      <div>
+        <a href="#home">Home</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#mySkills">My Skills</a>
+        <a href="#contactMe">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="homepage" id="home">
+      <div style="height: 5vh"></div>
+      <div class="mainhome">
+        <img src="AhmedSarmed.png" alt="" style="height: 80%" />
+        <div style="width: 5vh"></div>
+        <div>
+          <p>AHMED</p>
+          <p>SARMED</p>
+        </div>
+      </div>
+      <h1 class="text">
+        Hello, I’m Ahmed I’m a 21 years old computer engineering student at
+        Al-Iraqia university.
+      </h1>
+      <img src="happyMemories.png" alt="" style="width: 120vh" />
+      <div style="height: 5vh"></div>
+    </div>
+
+    <div class="aboutMe" id="aboutMe">
+      <div style="height: 10vh"></div>
+      <div class="aboutCenter" style="width: fit-content">
+        <h1>About Me</h1>
+        <div class="aboutGrid">
+          <div class="mainAbout">
+            <p>
+              Ahmed Sarmed Saadi / احمد سرمد سعدي computer engineering student
+              at al-Iraqia university from Bagdad lives in al-adamia city omar
+              st.
+            </p>
+            <div style="width: 15vh"></div>
+            <img src="Ahmedsarmed1.png" alt="" style="height: 70%" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySkills" id="mySkills">
+      <div style="height: 10vh"></div>
+      <div class="skillsCenter" style="width: fit-content">
+        <h1>My Skills</h1>
+        <div class="SkillsGrid">
+          <div class="mainSkills">
+            <div style="width: 15vh"></div>
+            <div class="divSkill">
+              <img class="aa" src="webskill.png" alt="" />
+              <div>
+                <p>front end</p>
+              </div>
+            </div>
+            <div style="width: 25%"></div>
+            <div class="divSkill">
+              <img class="aa" src="designskill.png" />
+              <div>
+                <p style="width: max-content">Graphic Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contactMe" id="contactMe">
+      <p style="font-size: 5vh">contact Me</p>
+      <div>
+        <p>Telegram : Oym_03</p>
+        <div style="width: 3vh"></div>
+        <button onclick="copyToClipboard('Oym_03')">copy</button>
+      </div>
+      <div>
+        <p>Instagram : Oym_03</p>
+        <div style="width: 3vh"></div>
+        <button onclick="copyToClipboard('Oym_03')">copy</button>
+      </div>
+      <div>
+        <p>email : asarmed666@gmail.com</p>
+        <div style="width: 3vh"></div>
+        <button onclick="copyToClipboard('asarmed666@gmail.com')">copy</button>
+      </div>
+    </div>
+
+    <script>
+      function copyToClipboard(text) {
+        // Create a temporary textarea element
+        var textarea = document.createElement("textarea");
+        // Set the value of the textarea to the text to be copied
+        textarea.value = text;
+        // Append the textarea to the body
+        document.body.appendChild(textarea);
+        // Select the text in the textarea
+        textarea.select();
+        // Copy the selected text to the clipboard
+        document.execCommand("copy");
+        // Remove the textarea from the DOM as it's no longer needed
+        document.body.removeChild(textarea);
+        // Optionally, you can provide a visual feedback to the user
+        alert("Text copied to clipboard: " + text);
+      }
+    </script>
+  </body>
+</html>

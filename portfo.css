@@ -1,0 +1,153 @@
+.navBar {
+  top: 2%;
+  position: fixed;
+  display: flex;
+  height: 7vh;
+  width: 50%;
+  left: 25%;
+  background-color: #507686;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+
+  box-shadow: 2px 3px gray;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.navBar a {
+  display: flex;
+  position: relative;
+  float: left;
+  color: #f2f2f2;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 1vh;
+}
+.navBar div {
+  height: 5vh;
+  background-color: transparent;
+}
+
+.navBar a:hover {
+  align-items: center;
+  background-color: #ddd;
+  color: black;
+  border-radius: 25px;
+  height: 25%;
+}
+
+.navBar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.homepage {
+  height: 100vh;
+
+  background-color: #507686;
+  top: 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage p {
+  font-size: 13vh;
+  line-height: 0%;
+  color: white;
+  text-shadow: -5px 0px #000, 0px -5px #000;
+}
+.mainhome {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  width: 120vh;
+  color: white;
+  font-size: 4vh;
+}
+.mainAbout {
+  padding-right: 10vh;
+  height: 70vh;
+  width: 150vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: inline-end;
+}
+.mainAbout p {
+  font-size: 6vh;
+}
+.aboutMe {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aa {
+  height: 50vh;
+  border-radius: 2%;
+}
+.divSkill {
+  display: grid;
+  justify-items: center;
+}
+.mySkills {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainSkills {
+  /* padding-right: 10vh; */
+  height: 70vh;
+  width: 150vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skillsGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactMe {
+  height: 15vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contactMe p {
+  color: #f2f2f2;
+  font-size: 3vh;
+}
+
+.contactMe div {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactMe button {
+  background-color: thistle;
+  border-radius: 5vh;
+  border-color: blueviolet;
+  font-size: 2vh;
+}
+
